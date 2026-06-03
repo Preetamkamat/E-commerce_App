@@ -1,6 +1,7 @@
 package com.qa.ecommerce.base;
 
 import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -12,7 +13,9 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
 import java.time.Duration;
@@ -24,7 +27,7 @@ public class BaseTest {
     public AndroidDriver driver;
     public WebDriverWait wait;
 
-    @BeforeClass
+    @BeforeMethod
     public void configureAppium() throws InterruptedException {
     /* AppiumDriverLocalService service = new AppiumServiceBuilder()
                .withAppiumJS(new File("C:\\Users\\preet\\AppData\\Roaming\\npm\\node_modules\\appium\\lib\\main.js"))
@@ -52,7 +55,7 @@ public class BaseTest {
         options.setDeviceName("Pixel 10");
         options.setPlatformName("Android");
         options.setPlatformVersion("16");
-        options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\com\\qa\\appium\\resource\\General-Store.apk");
+        options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\com\\qa\\ecommerce\\resource\\General-Store.apk");
         driver = new AndroidDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -86,7 +89,17 @@ public class BaseTest {
         ));
     }
 
-    @AfterClass
+    public void scrollGestureAction(String setTextForScrollGesture) {
+        WebElement scrollableElement = driver.findElement(AppiumBy.androidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView("
+                        + "new UiSelector().text(\"" + setTextForScrollGesture + "\"))"
+        ));
+
+        // Optional: Usually you want to click it after scrolling to it
+        scrollableElement.click();
+    }
+
+    @AfterMethod
     public void tearDown() {
         driver.quit();
         service.stop();

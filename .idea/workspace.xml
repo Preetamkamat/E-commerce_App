@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f90f43c-c546-4ca2-a1f4-e628568333d0" name="Changes" comment="" />
+    <list default="true" id="9f90f43c-c546-4ca2-a1f4-e628568333d0" name="Changes" comment="Added pom and apk file">
+      <change afterPath="$PROJECT_DIR$/appium_server_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +22,25 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Preetamkamat&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Preetamkamat/E-commerce_App.git&quot;,
+    &quot;accountId&quot;: &quot;0c7345d9-9888-4863-a435-a532d7c54a50&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3ETLXuaHPpU6oSq1Soh1Sv75cqc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,10 +48,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.ECommerce.SearchProductList_TC3.executor": "Run",
+    "TestNG.ECommerce.executor": "Run",
+    "TestNG.ECommerce.toastMessage_TC2.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/test/java/com/qa/ecommerce/resource",
@@ -42,6 +70,31 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Study_Selenium_Pawan\Appium\Ecommerce_App\src\test\java\com\qa\ecommerce\resource" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ECommerce.SearchProductList_TC3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.ecommerce.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.ecommerce.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.ecommerce.testcases.ECommerce" />
+      <option name="METHOD_NAME" value="SearchProductList_TC3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ECommerce.SearchProductList_TC3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -59,10 +112,31 @@
       <option name="presentableId" value="Default" />
       <updated>1780197658065</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added pom and apk file">
+      <option name="closed" value="true" />
+      <created>1780198768171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1780198768172</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added pom and apk file">
+      <option name="closed" value="true" />
+      <created>1780198872195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780198872195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added pom and apk file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pom and apk file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -71,6 +145,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
