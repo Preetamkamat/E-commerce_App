@@ -4,10 +4,13 @@ import com.qa.ecommerce.base.BaseTest;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ECommerce extends BaseTest {
@@ -32,20 +35,27 @@ public class ECommerce extends BaseTest {
 
     @Test(priority = 1)
     public void SearchProductList_TC3() {
-        scrollGestureAction("India");
+//        scrollGestureAction("India");
         driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/nameField")).sendKeys("Preetam");
         driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/btnLetsShop")).click();
         //toast message
         WebElement scrollableElement = driver.findElement(AppiumBy.androidUIAutomator(
                 "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView("
                         + "new UiSelector().text(\"Jordan 6 Rings\"))"));
-        List<WebElement> productCount = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
-        System.out.println(productCount.size());
-        int productSize = productCount.size();
-        for (int i = 0; i < productSize; i++) {
-            if (productCount.get(i).getText().equalsIgnoreCase("Jordan 6 Rings")) {
-                productCount.get(i).click();
+        List<WebElement> getProductName = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+        List<WebElement> addToCartButton = driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart"));
+        int productList = getProductName.size();
+        for (int i = 0; i < productList; i++) {
+            String getProductNameText = getProductName.get(i).getText();
+            if (getProductNameText.equalsIgnoreCase("Jordan 6 Rings")) {
+                addToCartButton.get(i).click();
+                break;
             }
         }
+        driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/productName")));
+        String productAddedToCart = driver.findElement(By.id("com.androidsample.generalstore:id/productName")).getText();
+        Assert.assertEquals(productAddedToCart, "Jordan 6 Rings");
     }
 }

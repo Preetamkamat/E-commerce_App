@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f90f43c-c546-4ca2-a1f4-e628568333d0" name="Changes" comment="Added pom and apk file">
-      <change afterPath="$PROJECT_DIR$/appium_server_log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.ECommerce.SearchProductList_TC3.executor": "Run",
+    "TestNG.ECommerce.SearchProductList_TC3.executor": "Debug",
     "TestNG.ECommerce.executor": "Run",
     "TestNG.ECommerce.toastMessage_TC2.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
@@ -63,6 +61,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/test/java/com/qa/ecommerce/resource",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/main/java/org/example/Main.java"
   }
 }]]></component>
@@ -148,13 +147,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="2" />
+          <line>49</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
+          <line>47</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
