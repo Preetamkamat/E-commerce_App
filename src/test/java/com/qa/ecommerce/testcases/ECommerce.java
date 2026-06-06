@@ -33,7 +33,7 @@ public class ECommerce extends BaseTest {
         Assert.assertEquals(actualToastMessage, "Please enter your name");
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void SearchProductList_TC3() {
 //        scrollGestureAction("India");
         driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/nameField")).sendKeys("Preetam");
@@ -54,8 +54,9 @@ public class ECommerce extends BaseTest {
         }
         driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/productName")));
-        String productAddedToCart = driver.findElement(By.id("com.androidsample.generalstore:id/productName")).getText();
+        wait.until(ExpectedConditions.attributeContains(driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/toolbar_title")), "text", "Cart"));
+        WebElement cartProductElement = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/productName")));
+        String productAddedToCart = cartProductElement.getText();
         Assert.assertEquals(productAddedToCart, "Jordan 6 Rings");
     }
 }

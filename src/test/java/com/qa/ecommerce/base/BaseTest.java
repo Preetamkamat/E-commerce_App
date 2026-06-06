@@ -52,9 +52,9 @@ public class BaseTest {
         service.start();
         System.out.println("Appium Server started at: " + service.getUrl());
         UiAutomator2Options options = new UiAutomator2Options();
-        options.setDeviceName("Pixel 10");
+        options.setDeviceName("Pixel 8");
         options.setPlatformName("Android");
-        options.setPlatformVersion("16");
+        options.setPlatformVersion("15");
         options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\com\\qa\\ecommerce\\resource\\General-Store.apk");
         driver = new AndroidDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
