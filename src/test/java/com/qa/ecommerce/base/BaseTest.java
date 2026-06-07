@@ -56,6 +56,9 @@ public class BaseTest {
         options.setPlatformName("Android");
         options.setPlatformVersion("15");
         options.setApp(System.getProperty("user.dir") + "\\src\\test\\java\\com\\qa\\ecommerce\\resource\\General-Store.apk");
+        options.setUiautomator2ServerLaunchTimeout(Duration.ofSeconds(60));
+        options.setUiautomator2ServerInstallTimeout(Duration.ofSeconds(60));
+        options.setAdbExecTimeout(Duration.ofSeconds(60));
         driver = new AndroidDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
