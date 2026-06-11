@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f90f43c-c546-4ca2-a1f4-e628568333d0" name="Changes" comment="Added pom and apk file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/FormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/ProductListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/util/AndroidActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" afterDir="false" />
@@ -45,33 +48,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.ECommerce.SearchProductList_TC3.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ECommerce.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ECommerce.toastMessage_TC2.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/test/java/com/qa/ecommerce/resource&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.ECommerce.SearchProductList_TC3.executor": "Run",
+    "TestNG.ECommerce.executor": "Run",
+    "TestNG.ECommerce.fillForm_TC1.executor": "Run",
+    "TestNG.ECommerce.toastMessage_TC2.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/test/java/com/qa/ecommerce/resource",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "E:/Study_Selenium_Pawan/Appium/Ecommerce_App/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Study_Selenium_Pawan\Appium\Ecommerce_App\src\test\java\com\qa\ecommerce\resource" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.ECommerce.fillForm_TC1">
     <configuration name="ECommerce.SearchProductList_TC3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Ecommerce_App" />
       <extension name="coverage">
@@ -90,8 +94,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ECommerce.fillForm_TC1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.ecommerce.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.ecommerce.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.ecommerce.testcases.ECommerce" />
+      <option name="METHOD_NAME" value="fillForm_TC1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ECommerce.toastMessage_TC2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Ecommerce_App" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.ecommerce.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.ecommerce.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.ecommerce.testcases.ECommerce" />
+      <option name="METHOD_NAME" value="toastMessage_TC2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ECommerce.fillForm_TC1" />
+        <item itemvalue="TestNG.ECommerce.toastMessage_TC2" />
         <item itemvalue="TestNG.ECommerce.SearchProductList_TC3" />
       </list>
     </recent_temporary>
@@ -148,8 +190,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
-          <line>55</line>
+          <line>57</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/FormPage.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
