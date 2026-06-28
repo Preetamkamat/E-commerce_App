@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f90f43c-c546-4ca2-a1f4-e628568333d0" name="Changes" comment="Added pom and apk file">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/FormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/ProductListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/util/AndroidActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/CartListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/ProductListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,7 @@
       <recent name="E:\Study_Selenium_Pawan\Appium\Ecommerce_App\src\test\java\com\qa\ecommerce\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ECommerce.fillForm_TC1">
+  <component name="RunManager" selected="TestNG.ECommerce.SearchProductList_TC3">
     <configuration name="ECommerce.SearchProductList_TC3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Ecommerce_App" />
       <extension name="coverage">
@@ -132,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ECommerce.SearchProductList_TC3" />
         <item itemvalue="TestNG.ECommerce.fillForm_TC1" />
         <item itemvalue="TestNG.ECommerce.toastMessage_TC2" />
-        <item itemvalue="TestNG.ECommerce.SearchProductList_TC3" />
       </list>
     </recent_temporary>
   </component>
@@ -190,13 +189,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
-          <line>57</line>
+          <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/pageobj/android/FormPage.java</url>
           <line>43</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/qa/ecommerce/testcases/ECommerce.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

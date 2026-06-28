@@ -1,11 +1,12 @@
 package com.qa.ecommerce.testcases;
 
 import com.qa.ecommerce.base.BaseTest;
+import com.qa.ecommerce.pageobj.android.CartListPage;
 import com.qa.ecommerce.pageobj.android.FormPage;
-import com.qa.ecommerce.pageobj.android.ProductList;
 import com.qa.ecommerce.pageobj.android.ProductListPage;
 import com.qa.ecommerce.util.AndroidActions;
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,6 +15,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.List;
 
 public class ECommerce extends BaseTest {
 
@@ -44,20 +46,21 @@ public class ECommerce extends BaseTest {
         formPage.setNameField("Preetam");
         formPage.clickBtnLetsShop();
         ProductListPage productNameList = new ProductListPage(driver);
-
+        androidActions.scrollGestureAction("Air Jordan 4 Retro");
         int productList = productNameList.getProductListSize();
+        List<WebElement> getProductNameText = productNameList.getProductName();
         for (int i = 0; i < productList; i++) {
-            String getProductNameText = productNameList.getProductName().get(i).getText();
-            if (getProductNameText.equalsIgnoreCase("Jordan 6 Rings")) {
-                productNameList.getProductName(i).click();
+            //String getProductNameText = productNameList.getProductName().get(i).getText();
+            if (getProductNameText.get(i).getText().equalsIgnoreCase("Air Jordan 4 Retro")) {
+                productNameList.clickOnAddToCartIcon();
                 break;
             }
         }
-        driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+        productNameList.clickOnAddToCartIcon();
+        CartListPage cartListPage = new CartListPage(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("com.androidsample.generalstore:id/toolbar_title"), "Cart"));
-        WebElement cartProductElement = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.androidsample.generalstore:id/productName")));
-        String productAddedToCart = cartProductElement.getText();
-        Assert.assertEquals(productAddedToCart, "Jordan 6 Rings");
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.id(cartListPage.getTitleOfCartPage()), "Cart"));
+        WebElement cartProductElement = wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id(cartListPage.getProductNameOnCartList())));
+        Assert.assertEquals(cartProductElement, "PG 3");
     }
 }

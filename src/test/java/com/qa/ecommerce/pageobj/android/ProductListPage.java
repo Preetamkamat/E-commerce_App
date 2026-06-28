@@ -21,15 +21,27 @@ public class ProductListPage extends AndroidActions {
     @AndroidFindBy(id = "com.androidsample.generalstore:id/productName")
     private List<WebElement> productsName;
 
-    @AndroidFindBy(id = "com.androidsample.generalstore:id/productAddCart")
-    private List<WebElement> addToCartButton;
+    @AndroidFindBy(id = "com.androidsample.generalstore:id/productAddCart[")
+    private WebElement productAddToCartButton;
+
+    @AndroidFindBy(id = "com.androidsample.generalstore:id/appbar_btn_cart")
+    private WebElement addToCartIcon;
 
     public List<WebElement> getProductName() {
-        return productsName;
+        List<WebElement> getProductNameText = productsName;
+        return getProductNameText;
     }
 
     public int getProductListSize() {
         return productsName.size();
+    }
+
+    public void clickOnAddToCartIcon() {
+        addToCartIcon.click();
+    }
+
+    public void clickOnTheAddToCartButton() {
+        productAddToCartButton.click();
     }
 
 }
